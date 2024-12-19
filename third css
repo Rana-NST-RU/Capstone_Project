@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color:  #FFFCA8;
+    overflow-x: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFCA8;
+    padding: 1rem 2rem;
+}
+header h1 {
+    font-family: "Sansita Swashed";
+    font-size: 1.5rem;
+    margin: 0;
+}
+header nav {
+    display: flex;
+    gap: 1.5rem;
+}
+header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+.main-content {
+    text-align: center;
+    padding: 2rem;
+}
+.main-content h2 {
+    font-size: 2.5rem;
+    font-family: "Montagu Slab";
+    margin-bottom: 2rem;
+}
+img[alt="Magical forest"] {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+.gallery div {
+    background-color: #FFFCA8;
+    padding: 1rem;
+    text-align: center;
+}
+.gallery img {
+    width: 100%;
+}
+footer {
+    background-color: #FFFCA8;
+    padding: 2rem;
+    text-align: center;
+}
+footer p {
+    margin: 0.5rem 0;
+}
+footer .follow {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    border-radius: 5px;
+}
+.Welcome{
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    height: 100px;
+}
+.Welcome .space{
+    width: 50vw;
+    height: 100px;
+    background-color: #FFFCA8;
+}
+.Welcome .footnote{
+    width: 50vw;
+    height: 100px;
+    text-align: left;
+    text-wrap: wrap;
+}
+.description{
+    text-align: left;
+}
+.port{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+}
+.port .des{
+    height: 100px;
+    width: 400px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+.contact .me{
+    text-align: left;
+    width: 600px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.contact .con{
+    text-align: left;
+    margin-bottom: 200px;
+    width: 600px;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  
+    footer {
+      font-size: 0.9rem;
+    }
+    .Welcome .footnote{
+        height: auto;
+    }
+  }
+@media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr;
+      gap: 10px;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+    }
+    .Welcome .footnote{
+        height: auto;
+    }
+  }
+  
